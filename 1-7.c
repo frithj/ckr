@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 /* print the value of EOF */
-main()
+int main()
 {
 	int c;
 
 	c = getchar();
 	printf("%d\n", c);
+
+    return 0;
 }

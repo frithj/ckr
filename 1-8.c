@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* count blanks, tabs and newlines */
-main()
+int main()
 {
 	int c, btn;
 
@@ -10,4 +10,6 @@ main()
 		if ((c =='\n') || (c == '\t') || (c == ' '))
 			++btn;
 	printf("%d\n", btn);
+
+    return 0;
 }
