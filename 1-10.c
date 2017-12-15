@@ -2,7 +2,7 @@
 
 /* copy input to output and replace tab, backspace, backslash by
 	\t, \b, \\ */
-main()
+int main()
 {
 	int c, explicit;
 
@@ -20,4 +20,6 @@ main()
 			putchar(c);
 		}
 	}
+
+    return 0;
 }

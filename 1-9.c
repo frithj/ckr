@@ -3,22 +3,24 @@
 /* copy input to output and replace
 	each string of one or more blanks
 	with a single blank */
-main()
+int main()
 {
-	int c, currentb;
+	int c, currentBlanks;
 
-	currentb = 0;
+	currentBlanks = 0;
 	while ((c = getchar()) != EOF) {
 		if (c == ' ') {
-			if (currentb == 0) {
-				currentb = 1;
+			if (currentBlanks == 0) {
+				currentBlanks = 1;
 				putchar(c);
 			}
-			if (currentb == 1)
+			if (currentBlanks == 1)
 				;
 		}else {
-			currentb = 0;
+			currentBlanks = 0;
 			putchar(c);
 		}
 	}
+
+    return 0;
 }
